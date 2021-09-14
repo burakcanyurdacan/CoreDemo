@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/DataAccessLayer/Migrations/20210914111533_mig_Relationship.Designer.cs
+/DataAccessLayer/Migrations/20210914111910_mig_Relationship_2.cs
+/DataAccessLayer/Migrations/20210914111910_mig_Relationship_2.Designer.cs
+/DataAccessLayer/Migrations/20210914111533_mig_Relationship.cs
