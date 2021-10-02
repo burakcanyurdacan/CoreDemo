@@ -12,27 +12,9 @@ namespace DataAccessLayer.Repositories
     public class BlogRepository : IGenericDal<Blog>
     {
         Context c = new Context();
-
-        public void AddBlog(Blog blog)
-        {
-            c.Add(blog);
-            c.SaveChanges();
-        }
-
         public void Delete(Blog t)
         {
             throw new NotImplementedException();
-        }
-
-        public void DeleteBlog(Blog blog)
-        {
-            c.Remove(blog);
-            c.SaveChanges();
-        }
-
-        public Blog GetByBlogId(int id)
-        {
-            return c.Blogs.Find(id);
         }
 
         public Blog GetById(int id)
@@ -42,7 +24,7 @@ namespace DataAccessLayer.Repositories
 
         public List<Blog> GetListAll()
         {
-            throw new NotImplementedException();
+            return c.Blogs.ToList();
         }
 
         public void Insert(Blog t)
@@ -50,20 +32,9 @@ namespace DataAccessLayer.Repositories
             throw new NotImplementedException();
         }
 
-        public List<Blog> ListAllBlog()
-        {
-            return c.Blogs.ToList();
-        }
-
         public void Update(Blog t)
         {
             throw new NotImplementedException();
-        }
-
-        public void UpdateBlog(Blog blog)
-        {
-            c.Update(blog);
-            c.SaveChanges();
         }
     }
 }

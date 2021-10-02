@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace BusinessLogicLayer.Abstract
 {
-    // bu kullanım yanlış
     public interface ICategoryService
     {
         void CategoryAdd(Category category);
