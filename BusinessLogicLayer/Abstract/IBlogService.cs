@@ -14,5 +14,7 @@ namespace BusinessLogicLayer.Abstract
         void BlogDelete(Blog blog);
         List<Blog> GetList();
         Blog GetById(int id);
+        List<Blog> GetBlogListWithCategory();
+        List<Blog> GetBlogById(int id);
     }
 }
